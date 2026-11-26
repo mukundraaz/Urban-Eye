@@ -57,4 +57,8 @@ Set `AI_MODE=model` and place YOLOv8 weights in `ai_module/models/` for real det
 - ✅ Traffic intelligence dashboard
 - ✅ Dark/Light mode
 - ✅ Demo mode (no backend required)
+<<<<<<< HEAD
 - panda
+=======
+-This is muku project
+>>>>>>> fde354fbaadf238f1bbabaaa6c82a0fa0ba9488e

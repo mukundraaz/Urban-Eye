@@ -1,0 +1,69 @@
+# Urban Eye AI Module Configuration
+
+detection:
+  model_path: "models/urbaneye_yolov8.pt"
+  confidence_threshold: 0.60
+  iou_threshold: 0.45
+  frame_sample_rate: 1.0  # seconds between sampled frames
+  max_frames: 500
+
+classes:
+  - name: pothole
+    category: road_damage
+    severity: critical
+    display: "Pothole"
+
+  - name: road_crack
+    category: road_damage
+    severity: high
+    display: "Road Crack"
+
+  - name: waterlogging
+    category: infrastructure
+    severity: high
+    display: "Waterlogging"
+
+  - name: missing_zebra_crossing
+    category: infrastructure
+    severity: medium
+    display: "Missing Zebra Crossing"
+
+  - name: damaged_traffic_sign
+    category: infrastructure
+    severity: high
+    display: "Damaged Traffic Sign"
+
+  - name: missing_traffic_sign
+    category: infrastructure
+    severity: high
+    display: "Missing Traffic Sign"
+
+  - name: missing_road_divider
+    category: infrastructure
+    severity: high
+    display: "Missing Road Divider"
+
+  - name: traffic_congestion
+    category: traffic
+    severity: medium
+    display: "Traffic Congestion"
+
+  - name: rash_driving
+    category: traffic
+    severity: critical
+    display: "Rash Driving"
+
+  - name: unsafe_pedestrian
+    category: pedestrian
+    severity: critical
+    display: "Unsafe Pedestrian Crossing"
+
+  - name: school_zone_violation
+    category: pedestrian
+    severity: critical
+    display: "School Zone Violation"
+
+severity_override:
+  # Override severity based on context
+  pothole_in_school_zone: critical
+  waterlogging_deep: critical

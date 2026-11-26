@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "C:\\Users\\datasets",
+  "weights_dir": "C:\\Users\\mukun\\weights",
+  "runs_dir": "C:\\Users\\mukun\\runs",
+  "uuid": "33b4ebcfa3b228d2f3558ff163abd5f2a02e6d1f5d357208049ae2676bf0a2c9",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}
